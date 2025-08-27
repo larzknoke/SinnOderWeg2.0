@@ -28,7 +28,7 @@ export default function Home() {
             <Image
               className=""
               src="/Aufkleber_Rund blau.png"
-              alt="Sinn der Weg Aufkleber Rund"
+              alt="Sinn oder Weg Aufkleber Rund"
               width={425}
               height={425}
               priority
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
           <Image
             className=""
-            src="/carolin2.png"
+            src="/Carolin2.png"
             alt="Carolin Home"
             width={800}
             height={640}
@@ -64,7 +64,7 @@ export default function Home() {
           <div className="max-w-7xl flex flex-row items-center justify-center gap-10">
             <Image
               className=""
-              src="/carolin4.png"
+              src="/Carolin4.png"
               alt="Carolin Profil"
               width={600}
               height={640}
