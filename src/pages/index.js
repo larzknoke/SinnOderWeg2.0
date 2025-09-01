@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import TestiCarousel from "@/components/TestiCarousel";
 import { testimonials } from "@/data/testimonials";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,7 @@ export default function Home() {
               height={425}
               priority
             />
-            <div className="flex flex-col text-4xl">
+            <div className="flex flex-col text-3xl">
               <h1>Coaching . Beratung.</h1>
               <h2>Interim Management</h2>
             </div>
@@ -47,8 +48,8 @@ export default function Home() {
             priority
           />
         </section>
-        <section className="bg-sow-orange py-16 text-2xl flex flex-col gap-8 text-sow-blue">
-          <div className="max-w-6xl self-center flex flex-col gap-6 leading-snug">
+        <section className="bg-sow-orange py-16 text-xl flex flex-col gap-8 text-sow-blue">
+          <div className="max-w-5xl self-center flex flex-col gap-6 leading-snug">
             <p>
               In dieser Welt ist kein Platz mehr für Business-Theater, noch mehr
               Powerpoint und schicke Kommunikationskampagnen. Wir müssen unsere
@@ -70,12 +71,12 @@ export default function Home() {
               height={640}
             />
             <div className="flex flex-col items-start  gap-16">
-              <div className="flex flex-col text-4xl">
+              <div className="flex flex-col text-3xl">
                 <span className="font-bold">Ich bin Carolin Peinecke.</span>
                 <span>Coach | Beraterin | Interim Managerin</span>
               </div>
-              <div className="flex flex-col text-4xl">
-                <span className="text-3xl leading-snug">
+              <div className="flex flex-col">
+                <span className="text-2xl leading-snug">
                   Diplom-Psychologin | Anders Denkerin | Systemische Beraterin |
                   Pain in the neck | Unternehmerin | Neugierige Lernerin |
                   Organisationsentwicklerin | Führungskraft | Mutter | Agile
@@ -98,7 +99,7 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-sow-orange p-16 text-2xl flex flex-col gap-8 text-sow-blue">
-          <div className="max-w-6xl self-center flex flex-col gap-6 mb-12">
+          <div className="max-w-5xl self-center flex flex-col gap-6 mb-12">
             <h3 className="text-4xl font-bold my-10">Meine Leistungen</h3>
             <div className="grid grid-cols-3 gap-24">
               <div className="flex flex-col gap-6">
@@ -113,10 +114,8 @@ export default function Home() {
                     style={{ width: "100%", height: "auto" }} // optional
                   />
                 </div>
-                <h4 className="font-bold text-2xl uppercase">
-                  Einzel-Coaching
-                </h4>
-                <p className="text-xl leading-relaxed mb-6">
+                <h4 className="font-bold text-xl uppercase">Einzel-Coaching</h4>
+                <p className="text-base leading-relaxed mb-6">
                   Langfristiger Coaching-Prozess oder intensiver Coaching-Tag:
                   Ich challenge, unterstütze, inspiriere dich in deinen
                   Herausforderungen als Führungskraft. Gemeinsam hinterfragen
@@ -124,9 +123,15 @@ export default function Home() {
                   Führungshandeln zielgerichtet weiter und entwickeln
                   zukunftsrobuste Lösungen für deinen Verantwortungsbereich.
                 </p>
-                <div className="button1 mt-auto w-full! text-center text-white bg-sow-blue hover:bg-white hover:text-sow-blue hover:border-sow-blue border-2">
+                <Link
+                  target="_blank"
+                  href={
+                    "leistungen/Produktblatt Einzel-Coaching Sinn oder weg GmbH - 2025.pdf"
+                  }
+                  className="button1 mt-auto w-full! text-center text-white bg-sow-blue hover:bg-white hover:text-sow-blue hover:border-sow-blue border-2"
+                >
                   mehr erfahren
-                </div>
+                </Link>
               </div>
               <div className="flex flex-col gap-6">
                 <div className="relative">
@@ -140,8 +145,8 @@ export default function Home() {
                     style={{ width: "100%", height: "auto" }} // optional
                   />
                 </div>
-                <h4 className="font-bold text-2xl uppercase">Team-Coaching</h4>
-                <p className="text-xl leading-relaxed mb-6">
+                <h4 className="font-bold text-xl uppercase">Team-Coaching</h4>
+                <p className="text-base leading-relaxed mb-6">
                   Gemeinsam als Führungsteam wachsen. In einem klar
                   strukturierten Prozess hinterfragen, ob Strategie, Strukturen
                   und Kultur noch die richtigen Antworten für diese Zeit sind.
@@ -149,9 +154,15 @@ export default function Home() {
                   und konkrete Schritte der Umsetzung einleiten. Daran arbeiten
                   wir gemeinsam in einem Team-Coaching.
                 </p>
-                <div className="button1 mt-auto w-full! text-center text-white bg-sow-blue hover:bg-white hover:text-sow-blue hover:border-sow-blue border-2">
+                <Link
+                  target="_blank"
+                  href={
+                    "leistungen/Produktblatt Team-Coaching Sinn oder weg GmbH - 2025.pdf"
+                  }
+                  className="button1 mt-auto w-full! text-center text-white bg-sow-blue hover:bg-white hover:text-sow-blue hover:border-sow-blue border-2"
+                >
                   mehr erfahren
-                </div>
+                </Link>
               </div>
               <div className="flex flex-col gap-6">
                 <div className="relative">
@@ -165,10 +176,10 @@ export default function Home() {
                     style={{ width: "100%", height: "auto" }} // optional
                   />
                 </div>
-                <h4 className="font-bold text-2xl uppercase">
+                <h4 className="font-bold text-xl uppercase">
                   Interim Management
                 </h4>
-                <p className="text-xl leading-relaxed mb-6">
+                <p className="text-base leading-relaxed mb-6">
                   Change Management ist Führungsaufgabe. Doch gleichzeitig das
                   Geschäft am Laufen zu halten und notwendige Veränderungen
                   voranzutreiben, ist eine nahezu unmögliche Herausforderung.
@@ -177,9 +188,15 @@ export default function Home() {
                   Maßnahmen ein und unterstütze bei der zielgerichteten
                   Kommunikation.
                 </p>
-                <div className="button1 mt-auto w-full! text-center text-white bg-sow-blue hover:bg-white hover:text-sow-blue hover:border-sow-blue border-2">
+                <Link
+                  target="_blank"
+                  href={
+                    "leistungen/Produktblatt Interim Management Sinn oder weg GmbH - 2025.pdf"
+                  }
+                  className="button1 mt-auto w-full! text-center text-white bg-sow-blue hover:bg-white hover:text-sow-blue hover:border-sow-blue border-2"
+                >
                   mehr erfahren
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -187,7 +204,7 @@ export default function Home() {
         <section className="flex flex-row justify-center  gap-10 text-white py-28 w-full bg-sow-gold">
           <div className="max-w-6xl flex flex-row items-center justify-center gap-12 ">
             <div className="flex flex-col items-start  gap-16 ">
-              <div className="flex flex-col text-5xl font-bold gap-8 leading-snug">
+              <div className="flex flex-col text-4xl font-bold gap-8 leading-snug">
                 <span>
                   Du suchst Prozessbegleitung für dein Change- oder
                   Transformationsprojekt?
@@ -208,8 +225,8 @@ export default function Home() {
                 className="animate-[spin_20s_linear_infinite]"
                 src="/bb_logo.png"
                 alt="Balancing Business Alliance Logo"
-                width={500}
-                height={500}
+                width={350}
+                height={350}
               />
             </div>
           </div>
