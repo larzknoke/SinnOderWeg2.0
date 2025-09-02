@@ -2,7 +2,9 @@ import Image from "next/image";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import TestiCarousel from "@/components/TestiCarousel";
 import { testimonials } from "@/data/testimonials";
+import { partners } from "@/data/partners";
 import Link from "next/link";
+import PartnerCarousel from "@/components/PartnerCarousel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -100,7 +102,7 @@ export default function Home() {
         </section>
         <section className="bg-sow-orange p-16 text-2xl flex flex-col gap-8 text-sow-blue">
           <div className="max-w-5xl self-center flex flex-col gap-6 mb-12">
-            <h3 className="text-4xl font-bold my-10">Meine Leistungen</h3>
+            <h3 className="text-3xl font-bold my-10">Meine Leistungen</h3>
             <div className="grid grid-cols-3 gap-24">
               <div className="flex flex-col gap-6">
                 <div className="relative">
@@ -216,9 +218,14 @@ export default function Home() {
                   </span>
                 </span>
               </div>
-              <div className="button1 text-sow-gold bg-white hover:bg-sow-pink hover:text-white ">
+              <Link
+                className="button1 text-sow-gold bg-white hover:bg-sow-pink hover:text-white "
+                target="_blank"
+                href={"https://www.balancingbusiness.de/"}
+              >
+                {" "}
                 Zur Balancing Business Alliance
-              </div>
+              </Link>
             </div>
             <div>
               <Image
@@ -231,21 +238,27 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="py-16 text-sow-blue">
+          <div className="max-w-6xl m-auto flex flex-col my-20 gap-12">
+            <h3 className="text-3xl font-bold  text-center">Partner</h3>
+            <PartnerCarousel partners={partners} />
+          </div>
+        </section>
         <section className="py-16 bg-sow-blue text-white">
-          <div className="max-w-6xl m-auto flex flex-col">
-            <h3 className="text-4xl font-bold  text-center">Kundenstimmen</h3>
+          <div className="max-w-5xl m-auto flex flex-col">
+            <h3 className="text-3xl font-bold  text-center">Kundenstimmen</h3>
             <TestiCarousel testimonials={testimonials} />
           </div>
         </section>
       </main>
       <section className="bg-sow-orange p-16 text-2xl flex flex-col gap-8 text-sow-blue">
         <div className="max-w-6xl self-center flex flex-col gap-6 mb-12">
-          <h3 className="text-4xl font-bold my-10">
+          <h3 className="text-3xl font-bold my-10">
             Lass uns in Kontakt bleiben!
           </h3>
           <div className="grid grid-cols-3 gap-16">
             <div className="flex flex-col gap-6 bg-sow-gold text-white p-6 rounded-xl text-center font-bold">
-              <p className="text-xl leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 Folge mir auf LinkedIn und Instagram für Eindrücke meiner
                 Arbeit.
               </p>
@@ -254,20 +267,20 @@ export default function Home() {
                   className=""
                   src="/linked_white.svg"
                   alt="LinkedIn Profil"
-                  width={48}
-                  height={48}
+                  width={36}
+                  height={36}
                 />
                 <Image
                   className=""
                   src="/insta_white.svg"
                   alt="Instagram Profil"
-                  width={48}
-                  height={48}
+                  width={36}
+                  height={36}
                 />
               </div>
             </div>
             <div className="flex flex-col gap-6 bg-sow-gold text-white p-6 rounded-xl text-center font-bold">
-              <p className="text-xl leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 Erhalte spannende Impulse zu Change, Führung und Strategie in
                 meinem Newsletter.
               </p>
@@ -276,7 +289,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col gap-6 bg-sow-gold text-white p-6 rounded-xl text-center font-bold">
-              <p className="text-xl leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 Oder lass’ uns persönlich miteinander sprechen!
               </p>
               <div className="button1 mt-auto self-center text-sow-gold bg-white hover:bg-sow-blue hover:text-white ">
@@ -287,7 +300,7 @@ export default function Home() {
         </div>
       </section>
       <footer className="bg-sow-blue py-10 text-white flex ">
-        <div className="max-w-6xl m-auto flex flex-row justify-between w-full text-xl">
+        <div className="max-w-6xl m-auto flex flex-row justify-between w-full text-base">
           <div>
             <span className="font-bold">Sinn oder weg GmbH</span>
             <div className="mt-4 flex flex-row gap-16">

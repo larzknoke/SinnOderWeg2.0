@@ -46,7 +46,7 @@ export const testimonials = [
     name: "Reiner Weißsieker",
     description:
       "Frau Carolin Peinecke führt bei der Firma Brasseler das Change Management während unserer laufenden IT-Transformation. Sie gestaltet den Wandel mit klarer Zielorientierung und hoher Effizienz. Ihre Stärken sind:Präzise Kommunikation: Sie vermittelt die notwendigen Schritte ohne Umschweife und sorgt für Transparenz auf allen Ebenen.Konsequente Umsetzung: Sie setzt vereinbarte Maßnahmen zielstrebig um und behält stets das Endziel im Blick.Verantwortungsübernahme: Sie steht zu ihren Entscheidungen und trägt die Verantwortung für deren Ergebnisse.Professioneller Umgang mit Herausforderungen: Sie erkennt Widerstände frühzeitig und begegnet ihnen mit klaren Handlungsstrategien. Frau Peinecke versteht es, Mitarbeiter für Veränderungen zu gewinnen, ohne auf leere Motivationsphrasen zurückzugreifen. Sie fördert Eigeninitiative und legt Wert auf persönliche Verantwortlichkeit. Ihre Arbeitsweise ist sachlich, direkt und effektiv. Sie konzentriert sich auf das Wesentliche und vermeidet unnötige Komplexität. Ich empfehle Frau Peinecke uneingeschränkt als Change Managerin. Sie ist eine Bereicherung für jedes Unternehmen, das Veränderungsprozesse erfolgreich gestalten möchte.",
-    image: "/testis/Scheller.jpg",
+    image: "/testis/Weißsieker.jpg",
   },
   {
     id: 8,
