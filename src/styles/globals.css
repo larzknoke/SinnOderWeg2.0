@@ -43,3 +43,8 @@ body {
 .slick-dots-white li button:before {
   color:white !important
 }
+
+
+h5 {
+  @apply text-lg font-semibold;
+}

@@ -5,6 +5,7 @@ import { testimonials } from "@/data/testimonials";
 import { partners } from "@/data/partners";
 import Link from "next/link";
 import PartnerCarousel from "@/components/PartnerCarousel";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -89,13 +90,18 @@ export default function Home() {
                 <div className="button1 text-sow-gold bg-white hover:bg-sow-blue hover:text-white ">
                   Profil herunterladen
                 </div>
-                <Image
-                  className=""
-                  src="/linked_white.svg"
-                  alt="LinkedIn Profil"
-                  width={48}
-                  height={48}
-                />
+                <Link
+                  href={"https://linkedin.com/company/sinnoderweg"}
+                  target="_blank"
+                >
+                  <Image
+                    className=""
+                    src="/linked_white.svg"
+                    alt="LinkedIn Profil"
+                    width={48}
+                    height={48}
+                  />
+                </Link>
               </div>
             </div>
           </div>
@@ -240,86 +246,80 @@ export default function Home() {
         </section>
         <section className="py-16 text-sow-blue">
           <div className="max-w-6xl m-auto flex flex-col my-20 gap-12">
-            <h3 className="text-3xl font-bold  text-center">Partner</h3>
+            <h3 className="text-3xl font-bold  text-center">Kunden</h3>
             <PartnerCarousel partners={partners} />
           </div>
         </section>
-        <section className="py-16 bg-sow-blue text-white">
+        <section className="py-28 bg-sow-blue text-white">
           <div className="max-w-5xl m-auto flex flex-col">
-            <h3 className="text-3xl font-bold  text-center">Kundenstimmen</h3>
+            <h3 className="text-3xl font-bold  text-center">Feedback</h3>
             <TestiCarousel testimonials={testimonials} />
           </div>
         </section>
+        <section className="bg-sow-orange p-16 text-2xl flex flex-col gap-8 text-sow-blue">
+          <div className="max-w-6xl self-center flex flex-col gap-6 mb-12">
+            <h3 className="text-3xl font-bold my-10">
+              Lass uns in Kontakt bleiben!
+            </h3>
+            <div className="grid grid-cols-3 gap-16">
+              <div className="flex flex-col gap-6 bg-sow-gold text-white p-6 rounded-xl text-center font-bold">
+                <p className="text-lg leading-relaxed">
+                  Folge mir auf LinkedIn und Instagram für Eindrücke meiner
+                  Arbeit.
+                </p>
+                <div className="flex flex-row self-center items-center gap-6">
+                  <Link
+                    href="https://linkedin.com/company/sinnoderweg"
+                    target="_blank"
+                  >
+                    <Image
+                      className=""
+                      src="/linked_white.svg"
+                      alt="LinkedIn Profil"
+                      width={36}
+                      height={36}
+                    />
+                  </Link>
+                  <Link
+                    href={"https://www.instagram.com/sinnoderweg/"}
+                    target="_blank"
+                  >
+                    <Image
+                      className=""
+                      src="/insta_white.svg"
+                      alt="Instagram Profil"
+                      width={36}
+                      height={36}
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div className="flex flex-col gap-6 bg-sow-gold text-white p-6 rounded-xl text-center font-bold">
+                <p className="text-lg leading-relaxed">
+                  Erhalte spannende Impulse zu Change, Führung und Strategie in
+                  meinem Newsletter.
+                </p>
+                <div className="button1 mt-auto px-5! self-center text-sow-gold bg-white hover:bg-sow-blue hover:text-white ">
+                  Newsletter abonnieren{" "}
+                </div>
+              </div>
+              <div className="flex flex-col gap-6 bg-sow-gold text-white p-6 rounded-xl text-center font-bold">
+                <p className="text-lg leading-relaxed">
+                  Oder lass’ uns persönlich miteinander sprechen!
+                </p>
+                <Link
+                  href={"https://calendly.com/sinn-oder-weg/kennenlernen"}
+                  target="_blank"
+                  className="button1 mt-auto self-center text-sow-gold bg-white hover:bg-sow-blue hover:text-white "
+                >
+                  Termin vereinbaren{" "}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <section className="bg-sow-orange p-16 text-2xl flex flex-col gap-8 text-sow-blue">
-        <div className="max-w-6xl self-center flex flex-col gap-6 mb-12">
-          <h3 className="text-3xl font-bold my-10">
-            Lass uns in Kontakt bleiben!
-          </h3>
-          <div className="grid grid-cols-3 gap-16">
-            <div className="flex flex-col gap-6 bg-sow-gold text-white p-6 rounded-xl text-center font-bold">
-              <p className="text-lg leading-relaxed">
-                Folge mir auf LinkedIn und Instagram für Eindrücke meiner
-                Arbeit.
-              </p>
-              <div className="flex flex-row self-center items-center gap-6">
-                <Image
-                  className=""
-                  src="/linked_white.svg"
-                  alt="LinkedIn Profil"
-                  width={36}
-                  height={36}
-                />
-                <Image
-                  className=""
-                  src="/insta_white.svg"
-                  alt="Instagram Profil"
-                  width={36}
-                  height={36}
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-6 bg-sow-gold text-white p-6 rounded-xl text-center font-bold">
-              <p className="text-lg leading-relaxed">
-                Erhalte spannende Impulse zu Change, Führung und Strategie in
-                meinem Newsletter.
-              </p>
-              <div className="button1 mt-auto px-5! self-center text-sow-gold bg-white hover:bg-sow-blue hover:text-white ">
-                Newsletter abonnieren{" "}
-              </div>
-            </div>
-            <div className="flex flex-col gap-6 bg-sow-gold text-white p-6 rounded-xl text-center font-bold">
-              <p className="text-lg leading-relaxed">
-                Oder lass’ uns persönlich miteinander sprechen!
-              </p>
-              <div className="button1 mt-auto self-center text-sow-gold bg-white hover:bg-sow-blue hover:text-white ">
-                Termin vereinbaren{" "}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer className="bg-sow-blue py-10 text-white flex ">
-        <div className="max-w-6xl m-auto flex flex-row justify-between w-full text-base">
-          <div>
-            <span className="font-bold">Sinn oder weg GmbH</span>
-            <div className="mt-4 flex flex-row gap-16">
-              <div>
-                Steige 14 <br /> 37603 Holzminden <br /> Germany
-              </div>
-              <div>
-                +49 5531 8140558 <br />
-                hello@sinnoderweg.de
-              </div>
-            </div>
-          </div>
-          <div>
-            Impressum <br />
-            Datenschutz <br />
-            AGB
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

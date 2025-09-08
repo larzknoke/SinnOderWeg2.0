@@ -32,14 +32,14 @@ export const testimonials = [
     name: "Christian von Stengel",
     description:
       "Carolin hat unser Führungsteam in einer entscheidenden Übergangsphase unterstützt und dabei einen bleibenden Eindruck hinterlassen. Ihre Fähigkeit, tief zuzuhören und empathisch auf die Bedürfnisse ihrer Coachees einzugehen, hat maßgeblich dazu beigetragen, dass unsere Executives in ihrer neuen Rolle Fuß fassen und sich sicher fühlen konnten.Sie kombiniert diese Empathie mit einer klaren und direkten Ansprache, die hilft, Herausforderungen strukturiert und lösungsorientiert anzugehen. Durch ihre verbindliche Art schafft sie es, Vertrauen aufzubauen und gleichzeitig notwendige Impulse zu setzen, die einen echten Mehrwert liefern.Das durchweg positive Feedback unserer Executives bestätigt, wie wertvoll Carolins Begleitung für ihre berufliche Weiterentwicklung war. Es war spürbar, dass unsere Führungskräfte in ihrer Transition durch eine Expertin unterstützt wurden, die nicht nur fachlich, sondern auch menschlich überzeugt.Ich kann Carolin jedem empfehlen, der eine nachhaltige Veränderung erreichen möchte.",
-    image: "/testis/Scheller.jpg",
+    image: "/testis/vonStengel.jpeg",
   },
   {
     id: 6,
     name: "Jörg Brennecke",
     description:
       "Ich habe mit Carolin im Rahmen verschiedener Change- Management Projekte zusammenarbeiten dürfen. Carolin hat die Fähigkeit, komplexe interpersonelle Situationen schnell zu erfassen und diese im Rahmen von Workshops offen zu legen, ohne diese zu bewerten. Diese Fähigkeit hat uns sehr geholfen, ins Stocken geratene Prozesse wieder zu aktivieren, weil verdeckte Konflikte aufgearbeitet werden konnten. Darüber hinaus habe ich von einem persönlichen Coaching sehr profitieren können. Ich kann Carolin uneingeschränkt empfehlen.",
-    image: "/testis/Scheller.jpg",
+    image: "/testis/Brennecke.jpeg",
   },
   {
     id: 7,
@@ -53,6 +53,6 @@ export const testimonials = [
     name: "Mathias Kesting",
     description:
       "I have worked with Carolin in numerous international assignments. She is a fabulous advisor and coach at the very senior level, able to help individuals, teams and organizations to transform. With her deep organizational and psychological experience, she‘s able to adress very diverse audiences and to help them with their challenges.",
-    image: "/testis/Scheller.jpg",
+    image: "/testis/Kesting.jpeg",
   },
 ];
